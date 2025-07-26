@@ -69,7 +69,8 @@ export default {
 				'industrial-blue': 'hsl(var(--industrial-blue))',
 				'steel-gray': 'hsl(var(--steel-gray))',
 				'vibrant-red': 'hsl(var(--vibrant-red))',
-				'accent-blue': 'hsl(var(--accent-blue))'
+				'accent-blue': 'hsl(var(--accent-blue))',
+				'primary-glow': 'hsl(var(--primary-glow))'
 			},
 			backgroundImage: {
 				'gradient-hero': 'var(--gradient-hero)',
@@ -79,7 +80,9 @@ export default {
 			boxShadow: {
 				'card': 'var(--shadow-card)',
 				'hover': 'var(--shadow-hover)',
-				'industrial': 'var(--shadow-industrial)'
+				'industrial': 'var(--shadow-industrial)',
+				'premium': 'var(--shadow-premium)',
+				'premium-hover': 'var(--shadow-premium-hover)'
 			},
 			transitionTimingFunction: {
 				'smooth': 'var(--transition-smooth)',
