@@ -4,7 +4,7 @@ import heroImage from "@/assets/hero-industrial.jpg";
 
 const HeroSection = () => {
   return (
-    <section className="relative min-h-[600px] flex items-center">
+    <section className="relative min-h-[600px] flex items-center" data-aos="fade-up">
       {/* Background Image with Overlay */}
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"

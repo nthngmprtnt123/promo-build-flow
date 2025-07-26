@@ -48,7 +48,7 @@ const IndustryCards = () => {
   ];
 
   return (
-    <section className="py-16 bg-background">
+    <section className="py-16 bg-background" data-aos="fade-up">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="font-montserrat font-bold text-3xl text-foreground mb-4">
