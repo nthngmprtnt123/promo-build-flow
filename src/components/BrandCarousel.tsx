@@ -9,20 +9,20 @@ const BrandCarousel = () => {
   ];
 
   return (
-    <section className="py-16 bg-muted/30">
-      <div className="container mx-auto px-4">
-        <div className="text-center mb-12">
-          <h2 className="font-montserrat font-bold text-3xl text-foreground mb-4">
+    <section className="py-12 lg:py-16 bg-muted/30">
+      <div className="container mx-auto px-4 lg:px-6">
+        <div className="text-center mb-8 lg:mb-12">
+          <h2 className="font-montserrat font-bold text-2xl lg:text-3xl text-foreground mb-3 lg:mb-4">
             Megbízható márkapartnereink
           </h2>
-          <p className="font-open-sans text-lg text-muted-foreground max-w-2xl mx-auto">
+          <p className="font-open-sans text-base lg:text-lg text-muted-foreground max-w-2xl mx-auto px-4 lg:px-0">
             A világ vezető ipari ragasztó és szalag gyártóinak hivatalos magyarországi képviselője
           </p>
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-6">
           {brands.map((brand, index) => (
-            <Card key={index} className="p-6 text-center hover:shadow-hover transition-all duration-300 group cursor-pointer bg-gradient-card">
+            <Card key={index} className="p-4 lg:p-6 text-center hover:shadow-hover transition-all duration-300 group cursor-pointer bg-gradient-card">
               <div className="mb-4">
                 <div className="h-16 flex items-center justify-center">
                   <span className="font-montserrat font-bold text-3xl text-primary group-hover:text-accent transition-colors">

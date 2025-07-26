@@ -48,18 +48,18 @@ const IndustryCards = () => {
   ];
 
   return (
-    <section className="py-16 bg-background">
-      <div className="container mx-auto px-4">
-        <div className="text-center mb-12">
-          <h2 className="font-montserrat font-bold text-3xl text-foreground mb-4">
+    <section className="py-12 lg:py-16 bg-background">
+      <div className="container mx-auto px-4 lg:px-6">
+        <div className="text-center mb-8 lg:mb-12">
+          <h2 className="font-montserrat font-bold text-2xl lg:text-3xl text-foreground mb-3 lg:mb-4">
             Szakosodott iparági megoldások
           </h2>
-          <p className="font-open-sans text-lg text-muted-foreground max-w-2xl mx-auto">
+          <p className="font-open-sans text-base lg:text-lg text-muted-foreground max-w-2xl mx-auto px-4 lg:px-0">
             Minden iparág egyedi kihívásaira szabott, professzionális ragasztó és szalag megoldások
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-6">
           {industries.map((industry, index) => {
             const IconComponent = industry.icon;
             return (
@@ -67,12 +67,12 @@ const IndustryCards = () => {
                 key={index} 
                 className="group hover:shadow-hover transition-all duration-300 cursor-pointer bg-gradient-card border-0 hover:-translate-y-1"
               >
-                <CardContent className="p-6">
-                  <div className={`w-14 h-14 rounded-lg ${industry.bgColor} flex items-center justify-center mb-4 group-hover:scale-110 transition-transform`}>
-                    <IconComponent className={`h-7 w-7 ${industry.color}`} />
+                <CardContent className="p-4 lg:p-6">
+                  <div className={`w-12 h-12 lg:w-14 lg:h-14 rounded-lg ${industry.bgColor} flex items-center justify-center mb-3 lg:mb-4 group-hover:scale-110 transition-transform`}>
+                    <IconComponent className={`h-6 w-6 lg:h-7 lg:w-7 ${industry.color}`} />
                   </div>
                   
-                  <h3 className="font-montserrat font-semibold text-xl text-foreground mb-3 group-hover:text-primary transition-colors">
+                  <h3 className="font-montserrat font-semibold text-lg lg:text-xl text-foreground mb-2 lg:mb-3 group-hover:text-primary transition-colors">
                     {industry.title}
                   </h3>
                   
